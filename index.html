@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoverNat에 오신 것을 환영합니다.</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- header#header+main#main+footer#footer -->
     <!-- s : header -->
     <header id="header">
-        <!-- nav>(figure>a>img)+ul.gnb>li*5 -->
+        <div class="inner">
+             <!-- nav>(figure>a>img)+ul.gnb>li*5 -->
         <nav>
             <figure><a href="#"><img src="img/logo-black.svg" alt="logo-black"></a></figure>
             <ul class="gnb">
@@ -34,6 +36,7 @@
                 </li>
             </ul>
         </nav>
+        </div>
     </header>
     <!-- //e : header -->
 
@@ -42,11 +45,13 @@
         <!-- .main-visual>strong+p+a>p -->
         <!-- s : main-visual -->
         <div class="main-visual">
-            <h1>쉽고 편하게 스타일링!</h1>
-            <p>누구나, 언제 어디서나 스타일 완성!</p>
-            <a href="#">
-                <p>영감을 얻으세요</p>
-            </a>
+            <div class="inner">
+                <h1>쉽고 편하게 스타일링!</h1>
+                <p>누구나, 언제 어디서나 스타일 완성!</p>
+                <a href="#">
+                    <p>영감을 얻으세요</p>
+                </a>
+            </div>
         </div>
         <!-- //e : main-visual -->
 
@@ -54,188 +59,197 @@
 
         <!-- s : new-product -->
         <section class="new-product">
-            <!-- h2+ul.new-product>li*2>(figure>img)+dt>dt+dd -->
-            <h2>신규 제품</h2>
-            <ul class="new-product-list">
-                <li>
-                    <figure><img src="img/new-product-1.jpg" alt="new-product-1"></figure>
-                    <dt>
-                        <dt>블랙 봄버 재킷</dt>
-                        <dd>₩ 120000</dd>
-                    </dt>
-                </li>
-                <li>
-                    <figure><img src="img/new-product-2.jpg" alt="new-product-2"></figure>
-                    <dt>
-                        <dt>흰색 운동화</dt>
-                        <dd>₩ 98000</dd>
-                    </dt>
-                </li>
-            </ul>
+            <div class="inner">
+                <!-- h2+ul.new-product>li*2>(figure>img)+dt>dt+dd -->
+                <h2>신규 제품</h2>
+                <ul class="new-product-list">
+                    <li>
+                        <figure><img src="img/new-product-1.jpg" alt="new-product-1"></figure>
+                        <dt>
+                            <dt>블랙 봄버 재킷</dt>
+                            <dd>₩ 120000</dd>
+                        </dt>
+                    </li>
+                    <li>
+                        <figure><img src="img/new-product-2.jpg" alt="new-product-2"></figure>
+                        <dt>
+                            <dt>흰색 운동화</dt>
+                            <dd>₩ 98000</dd>
+                        </dt>
+                    </li>
+                </ul>
+            </div>
         </section>
         <!-- //e : new-product -->
 
         <!-- s : category-highlights -->
         <section class="category-highlights">
-            <!-- h2+ul.category-list>li*6>(figure>img)+dl>dt+dd+p+button:button -->
-            <h2>카테고리 하이라이트</h2>
-            <!-- button:button.btn-filter -->
-            <button type="button" class="btn-filter">
-                <figure>
-                    <img src="img/ico-filter.svg" alt="ico-filter">
-                    <p>필터</p>
-                </figure>
-            </button>
-            <ul class="category-list">
-                <li>
-                    <figure><img src="img/category-1.jpg" alt="category-1"></figure>
-                    <dl>
-                        <dt>여아 잠옷</dt>
-                        <dd>숙면을 취하기에 완벽한 부드러운 면 소재의 소녀용 잠옷입니다.</dd>
-                        <p>가격: ₩ 32000</p>
-                        <button type="button">지금 구매하기</button>
-                    </dl>
-                </li>
-                <li>
-                    <figure><img src="img/category-2.jpg" alt="category-2"></figure>
-                    <dl>
-                        <dt>캐주얼 신발</dt>
-                        <dd>편안하고 스타일리시한 데일리 캐주얼 슈즈입니다.</dd>
-                        <p>가격: ₩ 60000</p>
-                        <button type="button">신발 쇼핑</button>
-                    </dl>
-                </li>
-                <li>
-                    <figure><img src="img/category-3.jpg" alt="category-3"></figure>
-                    <dl>
-                        <dt>여성 상의</dt>
-                        <dd>어떤 상황에도 잘 어울리는 세련된 여성용 탑입니다.</dd>
-                        <p>가격: ₩ 30000</p>
-                        <button type="button">탑 보기</button>
-                    </dl>
-                </li>
-                <li>
-                    <figure><img src="img/category-4.jpg" alt="category-4"></figure>
-                    <dl>
-                        <dt>여름 드레스</dt>
-                        <dd>더위를 이겨낼 가볍고 산뜻한 여름 드레스.</dd>
-                        <p>가격: ₩ 53000</p>
-                        <button type="button">드레스 살펴보기</button>
-                    </dl>
-                </li>
-                <li>
-                    <figure><img src="img/category-5.jpg" alt="category-5"></figure>
-                    <dl>
-                        <dt>해변 의류</dt>
-                        <dd>해변에서 스타일리시한 하루를 보내기 위한 필수 비치웨어입니다.</dd>
-                        <p>가격: ₩ 47000</p>
-                        <button type="button">바다 컬렉션</button>
-                    </dl>
-                </li>
-                <li>
-                    <figure><img src="img/category-6.jpg" alt="category-6"></figure>
-                    <dl>
-                        <dt>여성용 샌들</dt>
-                        <dd>모든 외출에 이상적인 편안한 여성용 샌들입니다.</dd>
-                        <p>가격: ₩ 59000</p>
-                        <button type="button">샌들 판매점</button>
-                    </dl>
-                </li>
-            </ul>
+            <div class="inner">
+                <!-- h2+ul.category-list>li*6>(figure>img)+dl>dt+dd+p+button:button -->
+                <h2>카테고리 하이라이트</h2>
+                <!-- button:button.btn-filter -->
+                <button type="button" class="btn-filter">
+                    <figure>
+                        <img src="img/ico-filter.svg" alt="ico-filter">
+                        <p>필터</p>
+                    </figure>
+                </button>
+                <ul class="category-list">
+                    <li>
+                        <figure><img src="img/category-1.jpg" alt="category-1"></figure>
+                        <dl>
+                            <dt>여아 잠옷</dt>
+                            <dd>숙면을 취하기에 완벽한 부드러운 면 소재의 소녀용 잠옷입니다.</dd>
+                            <p>가격: ₩ 32000</p>
+                            <button type="button">지금 구매하기</button>
+                        </dl>
+                    </li>
+                    <li>
+                        <figure><img src="img/category-2.jpg" alt="category-2"></figure>
+                        <dl>
+                            <dt>캐주얼 신발</dt>
+                            <dd>편안하고 스타일리시한 데일리 캐주얼 슈즈입니다.</dd>
+                            <p>가격: ₩ 60000</p>
+                            <button type="button">신발 쇼핑</button>
+                        </dl>
+                    </li>
+                    <li>
+                        <figure><img src="img/category-3.jpg" alt="category-3"></figure>
+                        <dl>
+                            <dt>여성 상의</dt>
+                            <dd>어떤 상황에도 잘 어울리는 세련된 여성용 탑입니다.</dd>
+                            <p>가격: ₩ 30000</p>
+                            <button type="button">탑 보기</button>
+                        </dl>
+                    </li>
+                    <li>
+                        <figure><img src="img/category-4.jpg" alt="category-4"></figure>
+                        <dl>
+                            <dt>여름 드레스</dt>
+                            <dd>더위를 이겨낼 가볍고 산뜻한 여름 드레스.</dd>
+                            <p>가격: ₩ 53000</p>
+                            <button type="button">드레스 살펴보기</button>
+                        </dl>
+                    </li>
+                    <li>
+                        <figure><img src="img/category-5.jpg" alt="category-5"></figure>
+                        <dl>
+                            <dt>해변 의류</dt>
+                            <dd>해변에서 스타일리시한 하루를 보내기 위한 필수 비치웨어입니다.</dd>
+                            <p>가격: ₩ 47000</p>
+                            <button type="button">바다 컬렉션</button>
+                        </dl>
+                    </li>
+                    <li>
+                        <figure><img src="img/category-6.jpg" alt="category-6"></figure>
+                        <dl>
+                            <dt>여성용 샌들</dt>
+                            <dd>모든 외출에 이상적인 편안한 여성용 샌들입니다.</dd>
+                            <p>가격: ₩ 59000</p>
+                            <button type="button">샌들 판매점</button>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            
         </section>
         <!-- //e : category-highlights -->
 
         <!-- s : look-book -->
         <section class="look-book">
-            <!-- h2+ul.look-book-list>li*6>(dl>dt+dd)+figure>img -->
-            <h2>룩북</h2>
-            <ul class="look-book-list">
-                <li>
-                    <dl>
-                        <dt>캐주얼 시크</dt>
-                        <dd>데님 재킷과 흰색 티셔츠, 스니커즈로 편안한 스타일을 연출해보세요.</dd>
-                    </dl>
-                    <figure><img src="img/look-book-1.jpg" alt="look-book-1"></figure>
-                </li>
-                <li>
-                    <dl>
-                        <dt>어반 엣지</dt>
-                        <dd>대담한 가죽 재킷과 블랙 진, 부츠를 매치했습니다.</dd>
-                    </dl>
-                    <figure><img src="img/look-book-2.jpg" alt="look-book-2"></figure>
-                </li>
-                <li>
-                    <dl>
-                        <dt>여름 바람</dt>
-                        <dd>화창한 날에 딱 맞는 가볍고 바람이 잘 통하는 선드레스.</dd>
-                    </dl>
-                    <figure><img src="img/look-book-3.jpg" alt="look-book-3"></figure>
-                </li>
-                <li>
-                    <dl>
-                        <dt>클래식 우아함</dt>
-                        <dd>시대를 초월한 블랙 드레스와 진주 액세서리가 조화를 이룹니다.</dd>
-                    </dl>
-                    <figure><img src="img/look-book-4.jpg" alt="look-book-4"></figure>
-                </li>
-                <li>
-                    <dl>
-                        <dt>스포티한 바이브</dt>
-                        <dd>운동복과 운동화로 편안함과 스타일을 만나보세요.</dd>
-                    </dl>
-                    <figure><img src="img/look-book-5.jpg" alt="look-book-5"></figure>
-                </li>
-                <li>
-                    <dl>
-                        <dt>보호 정신</dt>
-                        <dd>레이어드 액세서리가 돋보이는 하늘거리는 보헤미안 드레스.</dd>
-                    </dl>
-                    <figure><img src="img/look-book-6.jpg" alt="look-book-6"></figure>
-                </li>
-            </ul>
+            <div class="inner">
+                <!-- h2+ul.look-book-list>li*6>(dl>dt+dd)+figure>img -->
+                <h2>룩북</h2>
+                <ul class="look-book-list">
+                    <li>
+                        <dl>
+                            <dt>캐주얼 시크</dt>
+                            <dd>데님 재킷과 흰색 티셔츠, 스니커즈로 편안한 스타일을 연출해보세요.</dd>
+                        </dl>
+                        <figure><img src="img/look-book-1.jpg" alt="look-book-1"></figure>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>어반 엣지</dt>
+                            <dd>대담한 가죽 재킷과 블랙 진, 부츠를 매치했습니다.</dd>
+                        </dl>
+                        <figure><img src="img/look-book-2.jpg" alt="look-book-2"></figure>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>여름 바람</dt>
+                            <dd>화창한 날에 딱 맞는 가볍고 바람이 잘 통하는 선드레스.</dd>
+                        </dl>
+                        <figure><img src="img/look-book-3.jpg" alt="look-book-3"></figure>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>클래식 우아함</dt>
+                            <dd>시대를 초월한 블랙 드레스와 진주 액세서리가 조화를 이룹니다.</dd>
+                        </dl>
+                        <figure><img src="img/look-book-4.jpg" alt="look-book-4"></figure>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>스포티한 바이브</dt>
+                            <dd>운동복과 운동화로 편안함과 스타일을 만나보세요.</dd>
+                        </dl>
+                        <figure><img src="img/look-book-5.jpg" alt="look-book-5"></figure>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>보호 정신</dt>
+                            <dd>레이어드 액세서리가 돋보이는 하늘거리는 보헤미안 드레스.</dd>
+                        </dl>
+                        <figure><img src="img/look-book-6.jpg" alt="look-book-6"></figure>
+                    </li>
+                </ul>
+            </div>
+            
         </section>
         <!-- //e : look-book -->
 
         <!-- s : about-us -->
         <section class="about-us">
-            <h1><i class="hidden">제목</i></h1>
-            <!-- h2+p+dl*4>dt+dd -->
-            <div class="left-flex-wrap">
-                <h2>About us</h2>
-                <div class="small-wrap">
-                    <p>COVERNAT는 품질과 혁신에 대한 헌신으로 업계 혁신에 앞장서 왔습니다. 
-                        우리의 여정은 고객에게 공감할 수 있는 최고의 서비스를 제공하겠다는 
-                        단순한 아이디어에서 시작되었습니다.</p>
-                    <dl>
-                        <dt>혁신</dt>
-                        <dd>COVERNAT에서는 최첨단 기술과 창의적인 
-                            솔루션을 결합하는 선구적인 접근 방식을 채택합니다. 
-                            우리는 고객이 항상 최고의 서비스를 받을 수
-                            있도록 앞서 나가기 위해 노력하고 있습니다.</dd>
-                    </dl>
-                    <dl>
-                        <dt>고객 중심</dt>
-                        <dd>고객에 대한 우리의 약속은 확고합니다. 
-                            우리는 기대 이상의 결과를 제공하고
-                            고객의 성공을 위한 헌신을 보여줌으로써 
-                            장기적인 관계를 구축해야 한다고 믿습니다.</dd>
-                    </dl>
-                    <dl>
-                        <dt>전문적지식</dt>
-                        <dd>우리 팀은 풍부한 경험과 지식을
-                            갖춘 노련한 전문가들로 구성되어 있습니다. 
-                            그들의 전문 지식은 우리 회사의 중추를 형성하고
-                            모든 프로젝트에서 우수성을 달성하도록 이끌어줍니다. </dd>
-                    </dl>
-                    <dl>
-                        <dt>진실성</dt>
-                        <dd>투명성과 정직성은 우리 가치의 핵심입니다. 
-                            우리는 열린 의사소통과 진실성을 믿으며 고객이 항상 자신의 위치를 ​​알 수 있도록 보장합니다.</dd>
-                    </dl>
+            <div class="inner">
+                <h1><i class="hidden">제목</i></h1>
+                <!-- h2+p+dl*4>dt+dd -->
+                <div class="left-flex-wrap">
+                    <h2>About us</h2>
+                    <div class="small-wrap">
+                        <p>COVERNAT는 품질과 혁신에 대한 헌신으로 업계 혁신에 앞장서 왔습니다. 
+                            우리의 여정은 고객에게 공감할 수 있는 최고의 서비스를 제공하겠다는 
+                            단순한 아이디어에서 시작되었습니다.</p>
+                        <dl>
+                            <dt>혁신</dt>
+                            <dd>COVERNAT에서는 최첨단 기술과 창의적인 
+                                솔루션을 결합하는 선구적인 접근 방식을 채택합니다. 
+                                우리는 고객이 항상 최고의 서비스를 받을 수
+                                있도록 앞서 나가기 위해 노력하고 있습니다.</dd>
+                        </dl>
+                        <dl>
+                            <dt>고객 중심</dt>
+                            <dd>고객에 대한 우리의 약속은 확고합니다. 
+                                우리는 기대 이상의 결과를 제공하고
+                                고객의 성공을 위한 헌신을 보여줌으로써 
+                                장기적인 관계를 구축해야 한다고 믿습니다.</dd>
+                        </dl>
+                        <dl>
+                            <dt>전문적지식</dt>
+                            <dd>우리 팀은 풍부한 경험과 지식을
+                                갖춘 노련한 전문가들로 구성되어 있습니다. 
+                                그들의 전문 지식은 우리 회사의 중추를 형성하고
+                                모든 프로젝트에서 우수성을 달성하도록 이끌어줍니다. </dd>
+                        </dl>
+                        <dl>
+                            <dt>진실성</dt>
+                            <dd>투명성과 정직성은 우리 가치의 핵심입니다. 
+                                우리는 열린 의사소통과 진실성을 믿으며 고객이 항상 자신의 위치를 ​​알 수 있도록 보장합니다.</dd>
+                        </dl>
+                    </div>
                 </div>
+                <figure><img src="img/about-us.jpg" alt="about-us"></figure>
             </div>
-           
-            <figure><img src="img/about-us.jpg" alt="about-us"></figure>
         </section>
         <!-- //e : about-us -->
     </main>
@@ -243,13 +257,73 @@
 
     <!-- s : footer -->
     <footer id="footer">
-        <div class="top-wrap">
-            <strong></strong><a href="#">
-                <figure><img src="" alt=""></figure>
-            </a>
+        <div class="inner">
+            <div class="top">
+                <div class="top-wrap-1">
+                    <!-- strong{뉴스레터를 구독하세요} -->
+                    <strong>뉴스레터를 구독하세요</strong>
+                    <!-- form.news-letter-form>input:email+button:submit{구독} -->
+                    <form class="news-letter-form">
+                        <input type="email" class="newsletter-input" placeholder="Input your email" required>
+                        <button type="submit" class="newsletter-button">구독</button>
+                    </form>
+                </div>
+                <div class="top-wrap-2">
+                   <a href="#">
+                    <figure><img src="img/logo-white.svg" alt="logo-white"></figure>
+                   </a>
+                   <!-- ul.footer-letter-button-list>li*7>p -->
+                   <ul class="footer-letter-button-list">
+                        <li>
+                            <p>Pricing  </p>
+                        </li>
+                        <li>
+                            <p>About us</p>
+                        </li>
+                        <li>
+                            <p>Features</p>
+                        </li>
+                        <li>
+                            <p>Help Center</p>
+                        </li>
+                        <li>
+                            <p>Contact us</p>
+                        </li>
+                        <li>
+                            <p>FAQs</p>
+                        </li>
+                        <li>
+                            <p>Careers</p>
+                        </li>
+                   </ul>
+                </div>
+             </div>
+             <hr>
+           <div class="bottom">
+            <!-- select+p+ul.footer-sns-list>li*4>figure>img -->
+            <select>
+                <option value="ko">한국어</option>
+                <option value="en">English</option>
+                <option value="ja">日本語 (Japanese)</option>
+                <option value="ar">العربية (Arabic)</option>
+            </select>
+            <p>© 2024 Brand, Inc. • Privacy • Terms • Sitemap</p>
+            <ul class="footer-sns-list">
+                <li>
+                    <figure><img src="img/sns-1.svg" alt="sns-1"></figure>
+                </li>
+                <li>
+                    <figure><img src="img/sns-2.svg" alt="sns-2"></figure>
+                </li>
+                <li>
+                    <figure><img src="img/sns-3.svg" alt="sns-3"></figure>
+                </li>
+                <li>
+                    <figure><img src="img/sns-4.svg" alt="sns-4"></figure>
+                </li>
+            </ul>
+           </div>
         </div>
-       
-        
     </footer>
     <!-- //e : footer -->
 </body>
