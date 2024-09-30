@@ -71,3 +71,90 @@ img {
     height: 100%;
     object-fit: cover;
 }
+
+/* 디자인 시작 */
+
+/* inner */
+.inner {
+    width: 80%;
+    background: var(--grid-color);
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* header */
+
+#header {
+    width: 100%;
+    max-height: 200px;
+}
+
+#header .header-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-nav-group,
+.menu-util-group {
+    display: flex;
+    align-items: center;
+}
+
+.logo-nav-group {
+    gap: 3rem; /* 로고와 gnb 사이의 간격 */
+}
+
+.menu-util-group {
+    gap: 2rem; /* a와 util-menu 사이의 간격 */
+}
+
+.header-con figure {
+    width: 350px;
+    aspect-ratio: 1/0.1851851851851852;
+    background: #fff;
+}
+
+.header-con figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.gnb {
+    display: flex;
+    gap: 3rem;
+}
+
+.util-menu {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.util-menu li figure {
+    width: 40px;
+    aspect-ratio: 1/1;
+}
+
+.util-menu li figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.gnb li a {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.header-con > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--main-color);
+    border-radius: 10px;
+}
+
+.header-con > a:hover {
+    color: #fff;
+}
