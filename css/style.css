@@ -305,5 +305,62 @@ section h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
 }
+
+.category-list {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.category-list li {
+    width: 24.7917%;
+    aspect-ratio: 1/1.72440944882;
+}
+
+.category-list li figure {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.category-list li dl {
+    text-align: left;
+}
+.category-list li dl dt {
+    /* fw700+fz2.5r+c#000 */
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #000;
+}
+.category-list li dl dd {
+    /* fw400+fz1.4r+c */
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.category-list li dl p {
+    margin-top: 1rem;
+}
+
+.category-list li dl button {
+    /* p2r-5r-2r-5r+bgc+bdrs10 */
+    width: 100%;
+    margin: 1.2rem auto;
+    padding: 2rem 8rem 2rem 8rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
