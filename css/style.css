@@ -420,8 +420,104 @@ hr,
 /* about-us */
 .about-us {
     margin-top: 5rem;
+    text-align: left;
 }
 
 .about-flex-wrap {
     display: flex;
+    text-align: left;
+    justify-content: space-around;
+}
+
+.left-flex-wrap h2 {
+    text-align: left;
+}
+
+.about-flex-wrap figure {
+    width: 57.3rem;
+    aspect-ratio: 1/1.2;
+    border-radius: 10px;
+}
+
+.about-flex-wrap figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.small-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.small-wrap p {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+.small-wrap dl {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.small-wrap dl dt {
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+.small-wrap dl dd {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+/* footer */
+#footer {
+    margin-top: 5rem;
+}
+
+#footer .top {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+#footer .top .top-wrap-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#footer .top .top-wrap-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer .top .top-wrap-2 .footer-letter-button-list {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.bottom {
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom::before {
+    content: '';
+    display: block; /* Change flex to block for the pseudo-element */
+    width: 85%;
+    height: 2px; /* Adjust thickness */
+    background-color: white;
+    position: absolute;
+    top: -20px; /* Move it above the element */
+    left: 50%; /* Center the element */
+    transform: translateX(-50%); /* Offset by half of its width */
+}
+
+.footer-sns-list {
+    display: flex;
+    justify-content: space-between;
 }
