@@ -4,6 +4,7 @@
 /* 변수 선언 + 추가 디자인 초기화 */
 :root {
     --main-color: #034684;
+    --main-dark-color: #042340;
     --sub-color1: #1e2128;
     --title-color: #000;
     --text-color: #9095a1;
@@ -89,7 +90,7 @@ hr,
 /* inner */
 .inner {
     width: 70%;
-    background: var(--grid-color);
+    /* background: var(--grid-color); */
     margin: 0 auto;
     text-align: center;
 }
@@ -477,10 +478,13 @@ hr,
 
 /* footer */
 #footer {
+    background-color: var(--main-dark-color);
+    padding: 0.5% 0;
     margin-top: 5rem;
 }
 
 #footer .top {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 4rem;
