@@ -215,7 +215,7 @@ hr,
 
 .main-visual h1 {
     font-weight: 700;
-    font-size: 6.5rem;
+    font-size: clamp(4.5rem, 5.243vw, 6.5rem);
     color: #fff;
 }
 
