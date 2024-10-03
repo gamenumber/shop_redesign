@@ -90,7 +90,7 @@ hr,
 /* inner */
 .inner {
     width: 70%;
-    /* background: var(--grid-color); */
+    background: var(--grid-color);
     margin: 0 auto;
     text-align: center;
 }
@@ -545,18 +545,18 @@ hr,
 .top-wrap-1 {
     display: flex;
     justify-content: center; /* form을 중앙 정렬 */
-  }
-  
-  .news-letter-form {
+}
+
+.news-letter-form {
     background-color: transparent;
     border-radius: 10px;
     display: inline-flex;
     width: 30%;
     margin: 0 auto;
-  }
-  
-  .news-letter-form input[type="text"],
-  .news-letter-form input[type="email"] {
+}
+
+.news-letter-form input[type="text"],
+.news-letter-form input[type="email"] {
     background-color: #fff;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 16px;
@@ -564,19 +564,19 @@ hr,
     padding: 10px;
     border-radius: 5px 0 0 5px;
     border: none;
-  }
-  
-  .top-wrap-1 form .button-wrap {
+}
+
+.top-wrap-1 form .button-wrap {
     display: flex;
     justify-content: space-between; /* 버튼을 양옆으로 배치 */
     gap: 10px;
-  }
+}
 
-  .newsletter-input {
+.newsletter-input {
     margin: 0 0 0 auto;
-  }
-  
-  .top-wrap-1 form .newsletter-button {
+}
+
+.top-wrap-1 form .newsletter-button {
     background-color: var(--main-color);
     color: white;
     cursor: pointer;
@@ -585,31 +585,32 @@ hr,
     border: none;
     transition: background-color 0.3s ease;
     margin: 0 auto 0 0;
-  }
-  
-  .top-wrap-1 form button:hover {
+}
+
+.top-wrap-1 form button:hover {
     background-color: var(--main-color);
     color: #333;
-  }
-  
-  .footer-letter-button-list li p {
+}
+
+.footer-letter-button-list li p {
     font-weight: 400;
     font-size: 2rem;
     color: var(--white-90);
-  }
+}
 
-  .bottom select {
+.bottom select {
     padding: 1% 2%;
     background-color: transparent;
     border: 1px solid var(--white-90);
     border-radius: 10px;
     color: var(--white-90);
-  }
+}
 
-  .bottom p {
+.bottom p {
     font-weight: 400;
     font-size: 1.6rem;
     color: var(--white-90);
-  }
+}
 
-  /* sub design */
+/* sub design */
+
