@@ -90,7 +90,7 @@ hr,
 /* inner */
 .inner {
     width: 70%;
-    background: var(--grid-color);
+    /* background: var(--grid-color); */
     margin: 0 auto;
     text-align: center;
 }
@@ -296,6 +296,10 @@ hr,
     padding: 2% 3% 2% 3%;
 }
 
+.category-list dl {
+    margin-top: 1.2rem;
+}
+
 .category-highlights button {
     border-radius: 10px;
 }
@@ -427,7 +431,7 @@ hr,
 
 /* about-us */
 .about-us {
-    margin-top: 5rem;
+    margin-top: 8rem;
     text-align: left;
 }
 
@@ -480,7 +484,7 @@ hr,
 #footer {
     background-color: var(--main-dark-color);
     padding: 0.5% 0;
-    margin-top: 5rem;
+    margin-top: 7rem;
 }
 
 #footer .top {
@@ -613,8 +617,210 @@ hr,
 }
 
 /* sub design */
+
+/* collection */
 .collection {
     margin-top: 5rem;
+    padding: 1%;
+}
+
+.collection .collection-list {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.collection .collection-list li {
+    width: 31%;
+    aspect-ratio: 1/1.60053619303;
+}
+
+.collection .collection-list li figure {
+    width: 100%;
+    aspect-ratio: 1/1.24664879357;
+}
+
+
+.collection .collection-list li figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.collection .collection-list li dl {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+}
+.collection .collection-list li dl dt {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.collection .collection-list li dl dd,
+.collection .collection-list li dl p
+{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+/* best-pick */
+.best-pick {
+    padding: 1%;
+    margin-top: 5rem;
+}
+
+.best-pick .best-pick-list {
+    margin-top: 2rem;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.best-pick .best-pick-list li {
+    width: 22%;
+    aspect-ratio: 1/1.6875;
+}
+
+.best-pick .best-pick-list li figure {
+    width: 100%;
+    aspect-ratio: 1/1.3875;
+}
+
+.best-pick .best-pick-list li figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.best-pick .best-pick-list li dl {
+    margin-top: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.best-pick .best-pick-list li dl dt {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.best-pick .best-pick-list li dl dd,
+.best-pick .best-pick-list li dl p  {
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+/* sale */
+.sale {
+    margin-top: 5rem;
+    padding: 1%;
+}
+
+.sale .sale-list {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: space-evenly;
+}
+
+.sale .sale-list li {
+    display: flex;
+    gap: 20rem;
+    flex-direction: row-reverse;
+}
+
+.sale .sale-list li figure {
+    width: 16rem;
+    aspect-ratio: 1/0.675;
+}
+
+.sale .sale-list li figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sale .sale-list li dl {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.sale .sale-list li dl dt {
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.sale .sale-list li dl dd,
+.sale .sale-list li dl p {
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: var(--text-color);
+}
+
+/* event */
+.event {
+    margin-top: 5rem;
+    padding: 6%;
+}
+
+.event .event-list {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
     padding: 2%;
+    justify-content: space-around;
+}
+
+.event .event-list li {
+    display: flex;
+    width: 45%;
+    aspect-ratio: 1/0.24137931034;
+    gap: 18rem;
+    flex-direction: row-reverse;
+}
+
+.event .event-list li figure {
+    width: 16rem;
+    aspect-ratio: 1/0.675;
+}
+
+.event .event-list li figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.event .event-list li dl {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.event .event-list li dl dt {
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+.event .event-list li dl dd,
+.event .event-list li dl p {
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: var(--text-color);
 }
 
