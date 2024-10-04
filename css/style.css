@@ -465,6 +465,7 @@ hr,
 .small-wrap p {
     font-weight: 400;
     font-size: 1.8rem;
+    color: var(--text-color);
 }
 .small-wrap dl {
     display: flex;
@@ -478,6 +479,7 @@ hr,
 .small-wrap dl dd {
     font-weight: 400;
     font-size: 2rem;
+    color: var(--text-color);
 }
 
 /* footer */
@@ -523,7 +525,7 @@ hr,
 }
 
 .bottom::before {
-    content: '';
+    content: "";
     display: block; /* Change flex to block for the pseudo-element */
     width: 90%;
     height: 2px; /* Adjust thickness */
@@ -642,7 +644,6 @@ hr,
     aspect-ratio: 1/1.24664879357;
 }
 
-
 .collection .collection-list li figure img {
     width: 100%;
     height: 100%;
@@ -663,8 +664,7 @@ hr,
 }
 
 .collection .collection-list li dl dd,
-.collection .collection-list li dl p
-{
+.collection .collection-list li dl p {
     font-weight: 400;
     font-size: 1.5rem;
     color: var(--text-color);
@@ -714,7 +714,7 @@ hr,
 }
 
 .best-pick .best-pick-list li dl dd,
-.best-pick .best-pick-list li dl p  {
+.best-pick .best-pick-list li dl p {
     font-weight: 400;
     font-size: 1.8rem;
     color: var(--text-color);
@@ -823,4 +823,3 @@ hr,
     font-size: 1.7rem;
     color: var(--text-color);
 }
-
