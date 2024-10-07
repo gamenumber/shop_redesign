@@ -95,6 +95,13 @@ hr,
     text-align: center;
 }
 
+.big-inner {
+    width: 80%;
+    /* background: var(--grid-color); */
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* header */
 
 #header {
@@ -106,6 +113,7 @@ hr,
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 50px;
 }
 
 .logo-nav-group,
@@ -123,7 +131,7 @@ hr,
 }
 
 .header-con figure {
-    width: 350px;
+    width: 220px;
     padding: 0.2rem;
     aspect-ratio: 1/0.1851851851851852;
     /* background: #fff; */
@@ -209,8 +217,12 @@ hr,
 .main-visual {
     margin-top: 4.5rem;
     background: url(../img/main_visual.jpg);
-    padding: 3% 1.5% 3% 1.5%;
+    height: 600px;
+    padding: 5% 1.5%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-visual h1 {
@@ -254,14 +266,14 @@ hr,
 
 .new-product-list {
     /* margin: 2rem auto; */
+    margin-top: 2rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 2rem;
+    justify-content: space-between;
 }
 
 .new-product-list li {
-    width: 45%;
+    width: 48%;
 }
 
 .new-product-list li figure {
@@ -274,6 +286,7 @@ hr,
 }
 
 .new-product-list li dl {
+    margin-top: 1.2rem;
     text-align: left;
 }
 .new-product-list li dl dt {
@@ -285,7 +298,7 @@ hr,
 .new-product-list li dl dd {
     /* fw400+fz1.4r+c */
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     color: var(--text-color);
 }
 
@@ -357,12 +370,9 @@ hr,
 .category-list li dl dd {
     /* fw400+fz1.4r+c */
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: var(--text-color);
-}
-
-.category-list li dl p {
-    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .category-list li dl button {
@@ -392,16 +402,15 @@ hr,
 .look-book-list {
     margin-top: 2rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 3rem;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .look-book-list li {
     /* padding: 2%; */
     /* width: 381px; */
-    width: 26.4583%;
+    width: 46.4583%;
     aspect-ratio: 1/0.36745406824;
     display: flex;
     gap: 0.5rem;
@@ -409,7 +418,7 @@ hr,
 }
 
 .look-book-list li figure {
-    width: 160px;
+    width: 320px;
     aspect-ratio: 1/1;
 }
 
@@ -421,11 +430,11 @@ hr,
 }
 .look-book-list li dl dt {
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 3.7rem;
 }
 .look-book-list li dl dd {
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: var(--text-color);
 }
 
@@ -439,6 +448,10 @@ hr,
     display: flex;
     text-align: left;
     justify-content: space-around;
+}
+
+.left-flex-wrap {
+    padding: 3%;
 }
 
 .left-flex-wrap h2 {
@@ -474,7 +487,7 @@ hr,
 }
 .small-wrap dl dt {
     font-weight: 600;
-    font-size: 2.3rem;
+    font-size: 4rem;
 }
 .small-wrap dl dd {
     font-weight: 400;
@@ -500,12 +513,15 @@ hr,
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 0 60px; /* 양쪽 끝 여백 */
 }
 
 #footer .top .top-wrap-2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    gap: 2rem;
+    padding: 0 60px; /* 양쪽 끝 여백 */
 }
 
 #footer .top .top-wrap-2 .footer-letter-button-list {
@@ -527,7 +543,7 @@ hr,
 .bottom::before {
     content: "";
     display: block; /* Change flex to block for the pseudo-element */
-    width: 90%;
+    width: 95%;
     height: 2px; /* Adjust thickness */
     background-color: white;
     position: absolute;
