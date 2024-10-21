@@ -8,7 +8,6 @@
     --sub-color1: #1e2128;
     --title-color: #000;
     --text-color: #9095a1;
-    --text-color-gray: #585858;
     --text-shadow-color: rgba(0, 0, 0, 0.7);
     --gray-color: #dfdfdf;
     --grid-color: #23bdc8;
@@ -841,12 +840,56 @@ hr,
 
 /* 디테일 페이지 */
 
+#main {
+    margin-top: 5rem;
+}
+
+.top-flex-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Flexbox takes full width of .inner */
+    padding: 0 3%;
+}
+
+.small-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    text-align: left;
+    width: 100%; /* Makes it span the full width of .inner */
+}
+
+.left-flex-box {
+    text-align: left;
+}
+
+.left-flex-box p {
+    text-align: left;
+}
+
+.left-flex-box p b {
+    text-align: left;
+    color: var(--text-color);
+}
+
+.left-flex-box figure img {
+    object-fit: contain;
+}
+
+.icon-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
 .grid-container {
+    margin-top: 5rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-    grid-template-rows: repeat(2, auto); /* 2 rows */
-    gap: 0.6px; /* gap between grid items */
-    padding: 4%; /* padding around the grid */
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr); /* 4개의 동일한 열 */
+    grid-auto-rows: auto; /* 행의 높이를 자동으로 설정 */
+    gap: 8px; /* 그리드 항목 간의 간격 */
 }
 
 .grid-container figure {
@@ -860,20 +903,114 @@ hr,
 
 .grid-container figure img {
     max-width: 100%;
-    height: 100%;
+    height: auto; /* 세로 높이를 자동으로 조정 */
     object-fit: cover;
 }
 
-/* Make the first image span 2 columns and 2 rows */
 .item1 {
     grid-column: span 2; /* Spans across 2 columns */
     grid-row: span 2; /* Spans across 2 rows */
 }
 
+/* Remaining grid items */
 .item2,
 .item3,
 .item4,
 .item5 {
-    grid-column: span 1; /* Each item takes up 1 column */
-    grid-row: span 1; /* Each item takes up 1 row */
+    grid-column: span 1; /* Spans 1 column each */
+    grid-row: span 1; /* Spans 1 row each */
+}
+
+.bottom-flex-box {
+    margin-top: 5rem;
+    display: flex;
+}
+
+.right-flex-wrap {
+    padding: 0 2%;
+}
+
+.product-card {
+    padding-top: 2rem;
+    width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
+
+.price {
+    font-size: 24px;
+    color: #f2a900;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.selectors {
+    margin-bottom: 20px;
+}
+
+.dropdown select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    transition: border-color 0.3s ease;
+}
+
+.dropdown select:hover {
+    border-color: #f2a900;
+}
+
+.total {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.total span {
+    font-weight: bold;
+    color: #333;
+}
+
+.buy-now,
+.add-to-cart {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buy-now {
+    background-color: #f2a900;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    background-color: #fff;
+    color: #f2a900;
+    border: 2px solid #f2a900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-to-cart .cart-icon {
+    margin-right: 8px;
+}
+
+.buy-now:hover {
+    background-color: #e89b00;
+}
+
+.add-to-cart:hover {
+    background-color: #f2a900;
+    color: #fff;
 }
