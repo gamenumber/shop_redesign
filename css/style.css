@@ -926,29 +926,30 @@ hr,
     display: flex;
 }
 
-.bottom-flex-box .left-flex-wrap {
+.left-flex-wrap2 {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     padding: 0 !important;
 }
 
-.left-flex-wrap h3 {
+.left-flex-wrap2 h3 {
     /* fw700+fz2.4r+ta */
     font-weight: 700;
     font-size: 3.2rem;
     text-align: left;
 }
 
-.left-flex-wrap p {
+.left-flex-wrap2 p {
     /* fw400+fz2.4r+ta */
     font-weight: 400;
     font-size: 1.5rem;
     text-align: left;
 }
 
-.right-flex-wrap {
-    padding: 0 2%;
+.ico-menu-list2 {
+    display: flex;
+    flex-direction: column;
 }
 
 .product-card {
