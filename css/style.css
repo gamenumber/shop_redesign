@@ -952,6 +952,12 @@ hr,
     flex-direction: column;
 }
 
+.ico-menu-list2 li {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
 .product-card {
     padding-top: 2rem;
     width: 250px;
