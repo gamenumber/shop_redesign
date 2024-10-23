@@ -70,6 +70,7 @@ img {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
 }
 
 section h2 {
@@ -848,7 +849,6 @@ hr,
     display: flex;
     justify-content: space-between;
     width: 100%; /* Flexbox takes full width of .inner */
-    padding: 0 3%;
 }
 
 .small-wrap {
@@ -889,21 +889,19 @@ hr,
     width: 100%;
     grid-template-columns: repeat(4, 1fr); /* 4개의 동일한 열 */
     grid-auto-rows: auto; /* 행의 높이를 자동으로 설정 */
-    gap: 8px; /* 그리드 항목 간의 간격 */
+    gap: 6rem;
 }
 
 .grid-container figure {
-    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    padding: 0.5%;
     overflow: hidden;
 }
 
 .grid-container figure img {
-    max-width: 100%;
-    height: auto; /* 세로 높이를 자동으로 조정 */
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -924,6 +922,7 @@ hr,
 .bottom-flex-box {
     margin-top: 5rem;
     display: flex;
+    justify-content: space-between;
 }
 
 .left-flex-wrap2 {
@@ -936,26 +935,41 @@ hr,
 .left-flex-wrap2 h3 {
     /* fw700+fz2.4r+ta */
     font-weight: 700;
-    font-size: 3.2rem;
+    font-size: 3rem;
     text-align: left;
 }
 
 .left-flex-wrap2 p {
     /* fw400+fz2.4r+ta */
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-align: left;
 }
 
 .ico-menu-list2 {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: space-between; /* Spaces items out evenly */
+    gap: 1.5rem; /* Add spacing between items */
+    max-width: 600px; /* Adjust based on your container width */
 }
 
 .ico-menu-list2 li {
     display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
+    flex-direction: row; /* Ensures icons are aligned with text horizontally */
+    align-items: center; /* Vertically aligns icons and text */
+    gap: 1rem; /* Adjusts the space between the icon and the text */
+    width: 45%; /* Adjust width for two columns */
+    padding: 0.5rem 0; /* Optional padding to give some space between items */
+}
+
+.ico-menu-list2 figure {
+    margin: 0; /* Remove default margin from figure */
+}
+
+.ico-menu-list2 p {
+    margin: 0; /* Remove default margin from paragraphs */
+    font-size: 1.4rem;
 }
 
 .product-card {
