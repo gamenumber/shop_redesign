@@ -707,6 +707,7 @@ hr,
 .best-pick .best-pick-list li {
     width: 22%;
     aspect-ratio: 1/1.6875;
+    position: relative;
 }
 
 .best-pick .best-pick-list li figure {
@@ -738,6 +739,17 @@ hr,
     font-weight: 400;
     font-size: 1.8rem;
     color: var(--text-color);
+}
+
+.best-pick .best-pick-list li dl p {
+    /* poa+t24+l20+bd+bdrs50+p5-10+c#fff */
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    border: 1px solid var(--white-100);
+    border-radius: 50px;
+    padding: 5px 10px;
+    color: var(--white-100) !important;
 }
 
 /* sale */
