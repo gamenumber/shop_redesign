@@ -502,7 +502,7 @@ hr,
 /* footer */
 #footer {
     background-color: var(--main-dark-color);
-    padding: 0.5% 0;
+    padding: 2.5% 0;
     margin-top: 7rem;
 }
 
@@ -1068,4 +1068,8 @@ hr,
 .add-to-cart:hover {
     background-color: #f2a900;
     color: #fff;
+}
+
+#main .page-inner {
+    padding: 10rem 0;
 }
