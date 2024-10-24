@@ -1074,6 +1074,13 @@ hr,
     padding: 10rem 0;
 }
 
+.ham {
+    display: none;
+    padding: 2px;
+    width: 70px;
+    aspect-ratio: 1/1;
+}
+
 /* 미디어 쿼리 
 1100px
 800px
@@ -1081,9 +1088,13 @@ hr,
 */
 
 @media (max-width: 1100px) {
-}
+    .pad-none {
+        display: none;
+    }
 
-@media (max-width: 800px) {
+    .ham {
+        display: block;
+    }
 }
 
 @media (max-width: 600px) {
