@@ -1077,7 +1077,7 @@ hr,
 .menu-container {
     display: none;
     position: relative;
-    top: 18px;
+    top: 15px;
     right: 30px;
     width: 5rem;
     aspect-ratio: 1/1;
@@ -1195,5 +1195,34 @@ hr,
     .menu-container {
         top: -2px;
         right: 40px;
+    }
+
+    .new-product-list {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .filter-wrap {
+        gap: 0;
+    }
+
+    .filter-wrap h2 {
+        padding: 0;
+    }
+
+    .category-list li {
+        width: 96%;
+    }
+
+    .look-book-list {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .look-book-list li {
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
     }
 }
