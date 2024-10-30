@@ -1225,4 +1225,19 @@ hr,
         justify-content: center;
         align-items: center;
     }
+
+    .about-us {
+        margin: 0 auto;
+    }
+
+    .about-flex-wrap {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-flex-wrap figure {
+        width: 43rem;
+        aspect-ratio: 1/1.2;
+        border-radius: 10px;
+    }
 }
