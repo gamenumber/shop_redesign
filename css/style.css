@@ -1189,6 +1189,23 @@ hr,
     .look-book-list li {
         width: 98%;
     }
+
+    .event .event-list {
+        flex-direction: column;
+        margin-top: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .event .event-list li {
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .event .event-list li figure {
+        width: 20rem;
+        aspect-ratio: 1 / 1;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1240,4 +1257,27 @@ hr,
         aspect-ratio: 1/1.2;
         border-radius: 10px;
     }
+
+    .news-letter-form {
+        justify-content: center;
+    }
+
+    .top-wrap-2 {
+        flex-direction: column;
+    }
+
+    .top-wrap-2 .footer-letter-button-list {
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    .bottom {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .product .product-list {
+        margin-top: 2rem;
+    }
+
 }
