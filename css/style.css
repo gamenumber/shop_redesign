@@ -1278,6 +1278,10 @@ hr,
 
     .product .product-list {
         margin-top: 2rem;
+        gap: 2rem;
     }
 
+    .product .product-list li {
+        width: 46%;
+    }
 }
