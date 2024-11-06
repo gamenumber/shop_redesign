@@ -1284,4 +1284,10 @@ hr,
     .product .product-list li {
         width: 46%;
     }
+
+    .sale .sale-list li {
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 0;
+    }
 }
