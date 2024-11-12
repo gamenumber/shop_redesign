@@ -1192,19 +1192,12 @@ hr,
 
     .event .event-list {
         flex-direction: column;
-        margin-top: 2rem;
-        justify-content: center;
-        align-items: center;
+        gap: 2rem; /* 원하는 간격으로 조정 */
     }
 
     .event .event-list li {
+        width: 100%;
         justify-content: space-between;
-        gap: 2rem;
-    }
-
-    .event .event-list li figure {
-        width: 20rem;
-        aspect-ratio: 1 / 1;
     }
 }
 
@@ -1289,5 +1282,22 @@ hr,
         width: 100%;
         justify-content: space-evenly;
         gap: 0;
+    }
+
+    .event .event-list {
+        flex-direction: column;
+        gap: 4rem; /* 원하는 간격으로 조정 */
+    }
+
+    .event .event-list li {
+        width: 100%;
+        gap: 0 !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .event .event-list {
+        flex-direction: column;
+        gap: 14rem; /* 원하는 간격으로 조정 */
     }
 }
