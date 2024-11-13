@@ -1269,6 +1269,22 @@ hr,
         gap: 1.5rem;
     }
 
+    .bottom-flex-box {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .left-flex-box p {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .small-wrap {
+        justify-content: center;
+        align-items: center;
+    }
+
     .product .product-list {
         margin-top: 2rem;
         gap: 2rem;
@@ -1292,6 +1308,117 @@ hr,
     .event .event-list li {
         width: 100%;
         gap: 0 !important;
+    }
+
+    /* Header adjustments */
+    #header .big-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-con .logo-nav-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-con .gnb {
+        display: none; /* Hide desktop navigation */
+    }
+    .menu-container {
+        display: block; /* Show hamburger menu for small screens */
+    }
+
+    /* Adjust the submenu for smaller screens */
+    .submenu {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: #fff;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Main content adjustments */
+    .inner.page-inner {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .product-view .top-flex-box {
+        flex-direction: column;
+    }
+    .product-view .left-flex-box {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Image grid adjustments */
+    .grid-container {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px; /* Adjust the gap between elements as needed */
+        width: 100%;
+    }
+
+    .grid-container .item1 {
+        grid-column: 1 / -1; /* Span across both columns */
+        height: 200px; /* Adjust height as needed */
+        width: 100%;
+    }
+
+    .grid-container .item2,
+    .grid-container .item3,
+    .grid-container .item4,
+    .grid-container .item5 {
+        width: 100%;
+        height: 100px; /* Adjust height as needed */
+    }
+    .grid-container figure {
+        width: 48%;
+    }
+
+    /* Product card adjustments */
+    .product-card {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    .product-card .selectors select {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .product-card .buy-now,
+    .product-card .add-to-cart {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Footer adjustments */
+    #footer .big-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer .top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-letter-button-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+    .footer-sns-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Other adjustments */
+    .top-wrap-1,
+    .top-wrap-2 {
+        width: 100%;
+        text-align: center;
     }
 }
 
